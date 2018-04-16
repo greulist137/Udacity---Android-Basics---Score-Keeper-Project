@@ -11,7 +11,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:orientation="horizontal">
 
@@ -66,7 +65,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/team_1_hole"
+                    android:id="@+id/player_1_hole_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -82,16 +81,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="-" />
-
                 <TextView
                     android:layout_width="0dp"
+                    android:layout_marginLeft="24dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
@@ -106,6 +98,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:text="1"
+                    android:id="@+id/player_1_hole"
                     android:textAllCaps="true"
                     android:textColor="#616161"
                     android:textSize="14sp" />
@@ -116,7 +109,8 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginLeft="8dp"
                     android:layout_weight="1"
-                    android:text="+" />
+                    android:text="+"
+                    android:onClick="increaseHolePlayer1"/>
 
             </LinearLayout>
 
@@ -126,8 +120,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="24dp"
-                android:onClick="addThreePointsA"
                 android:text="Stroke"
+                android:onClick="player1Stroke"
                 android:textAllCaps="true"
                 android:textColor="#000000" />
 
@@ -137,8 +131,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
-                android:onClick="addTwoPointsA"
                 android:text="+1 Penalty"
+                android:onClick="player1PenaltyOne"
                 android:textAllCaps="true"
                 android:textColor="#000000" />
 
@@ -148,8 +142,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
-                android:onClick="+2 Penalty"
                 android:text="+2 Penalty"
+                android:onClick="player1PenaltyTwo"
                 android:textAllCaps="true"
                 android:textColor="#000000" />
         </LinearLayout>
@@ -181,7 +175,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/team_b_score"
+                android:id="@+id/player_2_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -211,7 +205,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/team_1_hole"
+                    android:id="@+id/player_2_hole_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -251,6 +245,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:text="1"
+                    android:id="@+id/player_2_hole"
                     android:textAllCaps="true"
                     android:textColor="#616161"
                     android:textSize="14sp" />
@@ -271,7 +266,6 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="24dp"
-                android:onClick="addThreePointsB"
                 android:text="Stroke"
                 android:textAllCaps="true"
                 android:textColor="#000000" />
@@ -282,7 +276,6 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
-                android:onClick="addTwoPointsB"
                 android:text="+1 Penalty"
                 android:textAllCaps="true"
                 android:textColor="#000000" />
@@ -293,7 +286,6 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
-                android:onClick="addFreeThrowB"
                 android:text="+2 Penalty"
                 android:textAllCaps="true"
                 android:textColor="#000000" />
@@ -307,7 +299,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
-        android:onClick="reset"
         android:text="reset"
         android:textAllCaps="true" />
 
