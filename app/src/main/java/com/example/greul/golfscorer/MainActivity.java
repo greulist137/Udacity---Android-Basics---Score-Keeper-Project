@@ -24,9 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void increaseHolePlayer1(View view){
         TextView player1HoleView = (TextView) findViewById(R.id.player_1_hole);
+        TextView player1ScoreView = (TextView) findViewById(R.id.player_1_hole_score);
         player1Hole += 1;
         player1HoleView.setText(String.valueOf(player1Hole));
         player1HoleScore = 0;
+        player1ScoreView.setText(String.valueOf(player1HoleScore));
 
     }
 
@@ -59,9 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void increaseHolePlayer2(View view){
         TextView player2HoleView = (TextView) findViewById(R.id.player_2_hole);
+        TextView player2ScoreView = (TextView) findViewById(R.id.player_2_hole_score);
         player2Hole += 1;
         player2HoleView.setText(String.valueOf(player2Hole));
         player2HoleScore = 0;
+        player2ScoreView.setText(String.valueOf(player2HoleScore));
 
     }
 
