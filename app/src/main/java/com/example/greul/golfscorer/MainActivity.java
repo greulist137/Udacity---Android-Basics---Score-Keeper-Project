@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void player2Stroke(View view){
-        TextView player1ScoreView = (TextView) findViewById(R.id.player_2_score);
-        TextView player1HoleScoreView = (TextView) findViewById((R.id.player_2_hole_score));
+        TextView player2ScoreView = (TextView) findViewById(R.id.player_2_score);
+        TextView player2HoleScoreView = (TextView) findViewById((R.id.player_2_hole_score));
         player2HoleScore += 1;
         player2Score += 1;
         player2HoleScoreView.setText(String.valueOf(player2HoleScore));
@@ -79,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void player2PenaltyOne(View view){
-        TextView player1ScoreView = (TextView) findViewById(R.id.player_2_score);
-        TextView player1HoleScoreView = (TextView) findViewById((R.id.player_2_hole_score));
+        TextView player2ScoreView = (TextView) findViewById(R.id.player_2_score);
+        TextView player2HoleScoreView = (TextView) findViewById((R.id.player_2_hole_score));
         player2HoleScore += 1;
         player2Score += 1;
         player2HoleScoreView.setText(String.valueOf(player2HoleScore));
@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void player2PenaltyTwo(View view){
-        TextView player1ScoreView = (TextView) findViewById(R.id.player_2_score);
-        TextView player1HoleScoreView = (TextView) findViewById((R.id.player_2_hole_score));
+        TextView player2ScoreView = (TextView) findViewById(R.id.player_2_score);
+        TextView player2HoleScoreView = (TextView) findViewById((R.id.player_2_hole_score));
         player2HoleScore += 2;
         player2Score += 2;
         player2HoleScoreView.setText(String.valueOf(player2HoleScore));
