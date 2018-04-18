@@ -296,6 +296,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
+        android:onClick="reset"
         android:text="reset"
         android:textAllCaps="true" />
 

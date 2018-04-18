@@ -96,4 +96,25 @@ public class MainActivity extends AppCompatActivity {
         player2ScoreView.setText(String.valueOf(player2Score));
     }
 
+    public void reset(View view){
+        TextView player1HoleView = (TextView) findViewById(R.id.player_1_hole);
+        TextView player1ScoreView = (TextView) findViewById(R.id.player_1_hole_score);
+        TextView player1HoleScoreView = (TextView) findViewById((R.id.player_1_hole_score));
+        TextView player2HoleView = (TextView) findViewById(R.id.player_2_hole);
+        TextView player2ScoreView = (TextView) findViewById(R.id.player_2_hole_score);
+        TextView player2HoleScoreView = (TextView) findViewById((R.id.player_2_hole_score));
+        player1Score = 0;
+        player1Hole = 0;
+        player1HoleScore = 0;
+        player2Score = 0;
+        player2Hole = 0;
+        player2HoleScore = 0;
+        player1HoleScoreView.setText(String.valueOf(player1HoleScore));
+        player1ScoreView.setText(String.valueOf(player1Score));
+        player1HoleView.setText(String.valueOf(player1Hole));
+        player2HoleScoreView.setText(String.valueOf(player2HoleScore));
+        player2ScoreView.setText(String.valueOf(player2Score));
+        player2HoleView.setText(String.valueOf(player2Hole));
+    }
+
 }
